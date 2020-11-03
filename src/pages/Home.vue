@@ -2,12 +2,12 @@
   <Layout>
     
 
-    <div class="marketing">
+    <div class="marketing pt-5">
 
 
       <div class="row">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Easy way to create chart.
+          <h2 class="featurette-heading">Easy way to create Chart
           </h2>
           <p class="lead">Create diagrams with minimal actions,
             use different shapes and colors and
@@ -15,7 +15,7 @@
           </p>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+          <img src="@/assets/images/image-blog-flowcharts.png" class="img-fluid" />
         </div>
       </div>
 
@@ -24,7 +24,7 @@
 
       <div class="row">
         <div class="col-md-7 order-last">
-          <h2 class="featurette-heading">Easy way to create chart.
+          <h2 class="featurette-heading">More Complex Diagrams
           </h2>
           <p class="lead">Create diagrams with minimal actions,
             use different shapes and colors and
@@ -32,7 +32,7 @@
           </p>
         </div>
         <div class="col-md-5 order-first">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+          <img src="@/assets/images/image-blog-complex.png" class="img-fluid" />
         </div>
       </div>
 

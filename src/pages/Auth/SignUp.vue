@@ -1,21 +1,41 @@
 <template>
   <Layout>
 
-    <form class="text-center form-signin ">
-      <router-link to="/"><img class="mb-4" src="/bootstrap.svg" alt="" width="72" height="72"></router-link>
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
+    <div class="border rounded p-3 shadow ">
+      <div class="text-center">
+        <router-link to="/"><img class="mb-4" src="/bootstrap.svg" width="72" height="72"></router-link>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
-    </form>
+
+      <form>
+        <div class="form-group">
+          <label for="emailLogin">Email address</label>
+          <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="passwordLogin">Password</label>
+          <input type="password" class="form-control" id="passwordLogin">
+        </div>
+        <div class="form-group">
+          <label for="rePasswordLogin">Re-Password</label>
+          <input type="password" class="form-control" id="rePasswordLogin">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </div>
+        <div class="py-3">
+          <Divider />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-block btn-primary google-btn" type="button">
+            <span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span>
+          </button>
+        </div>
+        <div class="form-group">
+          <p class="text-center">Already have account? <router-link to="/signin">Sign in here</router-link></p>
+        </div>
+      </form>
+
+    </div>
 
 
   </Layout>
@@ -29,9 +49,10 @@
 <script>
 
 import Layout from '@/layouts/Center'
+import Divider from '@/components/Divider'
 
 export default {
-  components: { Layout, }
+  components: { Layout, Divider }
 }
 
 </script>
@@ -40,30 +61,10 @@ export default {
 
 
 <style scoped>
-.form-signin {
-  padding: 15px;
+.google-btn {
+  background-color: #dd4b39;
 }
-.form-signin .checkbox {
-  font-weight: 400;
-}
-.form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.github-btn {
+  background-color: #444444;
 }
 </style>
